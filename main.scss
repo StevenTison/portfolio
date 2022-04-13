@@ -1,0 +1,111 @@
+body {
+    background-color: #0c1730;
+    margin: 0;
+    color: whitesmoke;
+    #fullpage {
+        nav {
+            display: flex;
+            flex-direction: row-reverse;
+            position: fixed;
+            width: 100%;
+            div#burger {
+                padding-right: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                cursor: pointer;
+                .line {
+                    display: inline-block;
+                    width: 5vh;
+                    border: 5px solid white;
+                }
+            }
+            ul {
+                li {
+                }
+            }
+        }
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        height: 100vh;
+        .para {
+            height: 100vh;
+            scroll-snap-align: start;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            h1 {
+                width: 50%;
+            }
+            .un {
+                justify-content: flex-end;
+                width: 50%;
+                img.premier {
+                    position: absolute;
+                    top: 30%;
+                    right: 10%;
+                    transform: scale(1.35);
+                    z-index: 100;
+                }
+                img.deuxieme {
+                    position: absolute;
+                    top: 30%;
+                    right: 10%;
+                    transform: scale(0.6) rotate(180deg);
+                    z-index: 101;
+                }
+                img.troisieme {
+                    position: absolute;
+                    top: 30%;
+                    right: 10%;
+                    transform: scale(0.8) rotate(180deg);
+                    z-index: 101;
+                }
+                img.quatrieme {
+                    position: absolute;
+                    top: 30%;
+                    right: 10%;
+                    transform: scale(1) rotate(180deg);
+                    opacity: 0.8;
+                    z-index: 101;
+                }
+                img.cinquieme {
+                    position: absolute;
+                    top: 30%;
+                    right: 10%;
+                    transform: scale(1.25) rotate(180deg);
+                    opacity: 0.6;
+                    z-index: 101;
+                }
+                img.sixieme {
+                    position: absolute;
+                    top: 10%;
+                    left: 73%;
+                    transform: scale(0.8);
+                    z-index: 101;
+                }
+                img.septieme {
+                    position: absolute;
+                    top: 50%;
+                    right: 10%;
+                    transform: scale(1.6, 1.3);
+                    z-index: 101;
+                }
+                img.huitieme {
+                    position: absolute;
+                    top: 10%;
+                    right: 25%;
+                    transform: scale(0.6);
+                }
+            }
+        }
+        .test {
+            height: 100vh;
+            scroll-snap-align: start;
+            p {
+            }
+            h2 {
+            }
+        }
+    }
+}
